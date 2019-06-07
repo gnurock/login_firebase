@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>app login con gmail</title>
+</head>
+<body>
+	<h1>Inicia sesion</h1>
+	<div id="root"></div>
+	<button id="login_google">
+		Inicia sesion con google
+	</button>	
+	<button id="login_facebook">
+		Inicia sesion con facebook
+	</button>	
+    <button id="guardar"> Guardar</button>
+
+     <!--EL JQUERY AL FINAL PARA QUE ME CARGE PRIMERO LO QUE TENGO EN  E L BODY-->
+
+         
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAgMOYutNTmlaUQg_3OeCqexc3OeRRr6i8",
+	    authDomain: "app-loggin.firebaseapp.com",
+	    databaseURL: "https://app-loggin.firebaseio.com",
+	    projectId: "app-loggin",
+	    storageBucket: "app-loggin.appspot.com",
+	    messagingSenderId: "759014738101"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+    
+
+<script src="app.js"></script>
+</body>
+</html>
